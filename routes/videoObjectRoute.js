@@ -1,10 +1,10 @@
 const express = require("express");
 
-// Imports path which is a node js module for managing file and directory path
+// Imports path which is a node js module for working with file and directory paths
 const path = require("path");
 
-// Imports readFileSync from fs which needs to be destructured. readFileSync
-// allows js to read the content of a directory
+// Imports readFileSync from fs which needs to be destructured. 
+// readFileSync returns the content of a file directory
 const {readFileSync} = require("fs");
 
 const router = express.Router();
