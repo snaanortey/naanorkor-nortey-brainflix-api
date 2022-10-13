@@ -6,7 +6,7 @@ const path = require("path");
 // Imports readFileSync from fs which needs to be destructured. 
 // readFileSync returns the content of a file directory
 const {readFileSync} = require("fs");
-const { get } = require("http");
+// const { get } = require("http");
 
 const router = express.Router();
 
