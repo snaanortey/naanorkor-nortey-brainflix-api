@@ -23,11 +23,14 @@ const getVideoArrayRoute = require("./routes/getVideoArrayRoute");
 
 const postVideoRoute = require("./routes/postVideoRoute");
 
+const postCommentRoute = require("./routes/postCommentRoute")
+
 app.use(express.json())
 
 app.use("/image", getImageRoute);
 app.use("/videos", getvideoObjectRoute);
 app.use("/videos", getVideoArrayRoute);
+app.use("/videos", postCommentRoute);
 
 app.use("/videos", postVideoRoute);
 
