@@ -17,7 +17,7 @@ const port = process.env.PORT || 5050;  // adding a backup port, in case no env 
 
 const getImageRoute = require("./routes/getImageRoute");
 
-const videoObjectRoute = require("./routes/videoObjectRoute");
+const getvideoObjectRoute = require("./routes/getvideoObjectRoute");
 
 const getVideoArrayRoute = require("./routes/getVideoArrayRoute");
 
@@ -26,7 +26,7 @@ const postVideoRoute = require("./routes/postVideoRoute");
 app.use(express.json())
 
 app.use("/image", getImageRoute);
-app.use("/videos", videoObjectRoute);
+app.use("/videos", getvideoObjectRoute);
 app.use("/videos", getVideoArrayRoute);
 
 app.use("/videos", postVideoRoute);
