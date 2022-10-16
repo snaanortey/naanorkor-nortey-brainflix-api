@@ -23,7 +23,9 @@ const getVideoArrayRoute = require("./routes/getVideoArrayRoute");
 
 const postVideoRoute = require("./routes/postVideoRoute");
 
-const postCommentRoute = require("./routes/postCommentRoute")
+const postCommentRoute = require("./routes/postCommentRoute");
+
+const deleteCommentRoute = require("./routes/deleteCommentRoute");
 
 app.use(express.json())
 
@@ -31,6 +33,7 @@ app.use("/image", getImageRoute);
 app.use("/videos", getvideoObjectRoute);
 app.use("/videos", getVideoArrayRoute);
 app.use("/videos", postCommentRoute);
+app.use("/videos", deleteCommentRoute);
 
 app.use("/videos", postVideoRoute);
 
