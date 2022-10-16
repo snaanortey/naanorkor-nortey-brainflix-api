@@ -22,7 +22,7 @@ router.get("/", (request, response) => {
 
   // Get the array as a response
   // Change the image of each item in the **********original********** array to the local image file in the public directory
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < 9; i++) {
     // Replace the value of each image property in the array with the local file image
     array[i].image = `http://localhost:5050/image/${i}`;
   }

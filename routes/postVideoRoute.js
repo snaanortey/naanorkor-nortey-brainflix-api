@@ -26,7 +26,7 @@ router.post("/", (request, response) => {
     id: uuid(),
     title,
     channel,
-    image,
+    image: "https://i.imgur.com/l2Xfgpl.jpg",
     description,
     views,
     likes,

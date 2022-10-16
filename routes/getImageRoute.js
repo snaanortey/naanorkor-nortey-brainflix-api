@@ -12,7 +12,7 @@ router.get("/:imageNumber", (request, response) => {
     __dirname,
     "../public/images/image" + imageNumber + ".jpeg"
   );
-  console.log(imagePath);
+
   response.sendFile(imagePath);
 });
 

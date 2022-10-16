@@ -24,11 +24,10 @@ router.get("/:id", (request, response) => {
   const arrayVideos = JSON.parse(fileContent);
 
   // Loop through the array to check for which object in the array had the same id as the query params
-  for (let i = 0; i < arrayVideos.length; i++) {
+  for (let i = 0; i < 9; i++) {
     if (id === arrayVideos[i].id) {
       response.send(arrayVideos[i]);
     }
-    console.log(response.data);
   }
 });
 
